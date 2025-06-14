@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: login-app
+    env: docker
+    plan: free
+    repo: https://github.com/2by2-hackons/login-app
+    branch: main
+    dockerfilePath: Dockerfile
+    autoDeploy: true
