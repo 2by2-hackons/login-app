@@ -4,8 +4,8 @@ WORKDIR /app
 
 COPY . /app
 
-RUN ./mvnw clean package -DskipTests
+RUN chmod +x mvnw && ./mvnw clean package -DskipTests
 
 EXPOSE 8080
 
-CMD ["java", "-jar", "target/*.jar"]
+CMD ["java", "-jar", "target/attendance-login-system-0.0.1-SNAPSHOT.jar"]
